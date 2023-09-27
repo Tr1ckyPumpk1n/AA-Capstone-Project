@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;500&family=Dela+Gothic+One&family=Kenia&family=Playfair+Display:wght@500&family=Press+Start+2P&family=Skranji&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background: linear-gradient(#4a4c57, #000 99%)
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(#b98004 7%, #eed546, #e7b325 88%);
+    font-size: 28px;
+}
+
+.navbar > ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navbar a {
+    display: inline-block;
+    font-family: 'Kenia', cursive;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+#current {
+    color: rgb(223, 2, 2);
+}
+
+.hero {
+    background-image: url('./Utils/Page-1/Code-Matrix.png');
+    background-color: rgb(15, 15, 15);
+    background-position: center;
+    background-size: cover;
+
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    color: #EEE5E9;
+}
+
+.hero > img {
+    width: 300px;
+    height: 300px;
+}
+
+.hero > h1 {
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.hero > p {
+    font-size: 24px;
+}
+
+.desc {
+    margin: 70px auto;
+    padding: 20px 40px;
+    width: 50%;
+
+    color: #E3740D;
+    border: 3px solid #E3740D;
+    border-radius: 8px;
+
+    text-align: center;
+    line-height: 40px;
+    font-size: 28px;
+}
+
+.container {
+    width: 75%;
+    height: max-content;
+    margin: 60px auto;
+    padding: 30px 50px 0 50px;
+    gap: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content > h2{
+    text-align: center;
+    font-family: 'Skranji', cursive;
+    color: #EEE5E9;
+
+    margin-bottom: 20px;
+}
+
+.group {
+    flex-grow: 1;
+
+    padding: 20px 40px;
+
+    border: 4px solid #F2CE4A;
+    border-radius: 10px;
+    color: #F2CE4A;
+}
+
+.img-box {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#rect-img {
+    width: 100%;
+}
+
+#square-img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.group > p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1250px) {
+    .desc {
+        width: 65%;
+    }
+
+    .container {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .content {
+        margin-bottom: 70px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .desc {
+        width: 90%;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero > h1 {
+        font-size: calc(1rem + 1vw);
+    }
+
+    .navbar {
+        height: 40px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .group {
+        padding: 20px;
+    }
+
+    .group > p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .hero > img {
+        width: 45%;
+        height: auto;
+    }
+
+    .desc {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .hero {
+        height: 140vw;
+    }
+
+    .hero > h1 {
+        font-size: calc(0.7rem + 1vw);
+    }
+
+    .hero > p {
+        font-size: calc(0.8rem + 1vw);
+    }
+
+    .content {
+        width: 100%;
+    }
+}
