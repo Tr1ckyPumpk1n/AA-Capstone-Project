@@ -15,6 +15,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: linear-gradient(#b98004 7%, #eed546, #e7b325 88%);
+    font-size: 28px;
 }
 
 .navbar > ul {
@@ -26,5 +29,16 @@ body {
 }
 
 .navbar a {
+    display: inline-block;
+    font-family: 'Kenia', cursive;
     text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+#current {
+    color: red;
 }

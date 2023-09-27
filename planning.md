@@ -43,19 +43,19 @@ Navbar
 Color: #F9E900
 Font-color: Black
 
-H2 / H3
-Font-color: #F9E900
-
 Background
 Color: #04395E
+
+H1 / H2 / H3
+Font-color: #F9E900
+
+Content outside form
+Font-color: #EEE5E9
 
 Form
 Color: #031D44
 Font-color & input field color: TBD
 Border-color: #F9E900
-
-Content outside form
-Font-color: #EEE5E9
 
 
 
