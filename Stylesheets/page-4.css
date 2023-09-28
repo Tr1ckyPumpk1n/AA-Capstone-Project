@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;500&family=Croissant+One&family=Kenia&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Barlow Condensed', sans-serif;
+    background: linear-gradient(90deg, #D5B9B2, #c293b0);
 }
 
 .navbar {
@@ -16,8 +17,8 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(#b98004 7%, #eed546, #e7b325 88%);
-    font-size: 28px;
+    background: linear-gradient(#4e1331 25%, #664554, #741e49 88%);
+    font-size: calc(1rem + 0.8vw);
 }
 
 .navbar > ul {
@@ -32,13 +33,140 @@ body {
     display: inline-block;
     font-family: 'Kenia', cursive;
     text-decoration: none;
-    color: #000;
+    color: #ECE2D0;
     letter-spacing: 1px;
 
     vertical-align: middle;
-    margin-top: -3px;
+    margin-top: -5px;
 }
 
 #current {
-    color: red;
+    color: rgb(196, 113, 36);
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: calc(1rem + 1.6vw);
+    font-family: 'Croissant One', cursive;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-items: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+article {
+    max-width: 350px;
+}
+
+figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    border-radius: 2px;
+}
+
+.one {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+figcaption {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+
+    background-color: rgba(165, 80, 98, 0.555);
+    color: #ECE2D0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    article {
+        width: 250px;
+    }
+
+    img {
+        width: 250px;
+        height: 143px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    article {
+        width: 200px;
+    }
+
+    img {
+        width: 200px;
+        height: 114px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    article {
+        width: 250px;
+    }
+
+    img {
+        width: 250px;
+        height: 143px;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .navbar {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    article {
+        width: 200px;
+    }
+
+    img {
+        width: 200px;
+        height: 114px;
+    }
 }

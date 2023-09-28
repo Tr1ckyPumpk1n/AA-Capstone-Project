@@ -61,7 +61,13 @@ body {
     color: #EEE5E9;
 }
 
-.hero > img {
+.hero a {
+    display: block;
+    height: 300px;
+    text-decoration: none;
+}
+
+.hero img {
     width: 300px;
     height: 300px;
 }
@@ -205,8 +211,13 @@ body {
         text-align: center;
     }
 
-    .hero > img {
+    .hero a {
         width: 45%;
+        height: auto;
+    }
+
+    .hero img {
+        width: 100%;
         height: auto;
     }
 
